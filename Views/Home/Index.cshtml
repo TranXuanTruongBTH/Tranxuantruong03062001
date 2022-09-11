@@ -9,4 +9,17 @@
     <input type="email" name="Email" placeholder="Enter Your Email">
     <button type="submit">Save</button>
 </form>
+<form asp-action="Create">
+    <label>Ma sinh vien:</label>
+    <input type="number" name="StudentID" value="1">
+    <br>
+    <label>Ho ten sinh vien:</label>
+    <input type="text" name="StudentName" value="Nguyen Van a">
+    <br>
+    <label>Tuoi:</label>
+    <input type="number" name="Age" value="18">
+    <br>
+    <input type="submit" value="Send">
+</form>
+<h2>@ViewBag.TT</h2>
 <h2>@ViewBag.name</h2>

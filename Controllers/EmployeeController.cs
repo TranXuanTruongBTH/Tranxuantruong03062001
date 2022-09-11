@@ -4,11 +4,11 @@ using TranXuanTruong.Net.Models;
 
 namespace TranXuanTruong.Net.Controllers;
 
-public class StudentController : Controller
+public class EmployeeController : Controller
 {
-    private readonly ILogger<StudentController> _logger;
+    private readonly ILogger<EmployeeController> _logger;
 
-    public StudentController(ILogger<StudentController> logger)
+    public EmployeeController(ILogger<EmployeeController> logger)
     {
         _logger = logger;
     }
@@ -17,10 +17,17 @@ public class StudentController : Controller
         return View();
     }
     [HttpPost]
-    public IActionResult Index(Student std)
+    public IActionResult Index(Employee std)
     {
-        std.StudentName = "Tin học kinh tế";
-        ViewBag.mess = std.StudentName;
+        int ID = std.EmployeeID;
+        String Name = std.EmployeeName;
+        int Phone = std.EmployeePhone;
+        String Address = std.EmployeeAddress;
+        ViewBag.ID = std.EmployeeID;
+        ViewBag.Name = std.EmployeeName;
+        ViewBag.Age = std.EmployeeAge;
+        ViewBag.Phone = std.EmployeePhone;
+        ViewBag.Address = std.EmployeeAddress;
         return View();
     }
 

@@ -13,9 +13,9 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index(string FullName)
+    public IActionResult Index(String FullName, String Email)
     {
-        ViewBag.name = "Hello:" + " " + FullName;
+        ViewBag.name = "Hello:" + " " + FullName + " " + Email;
         return View();
     }
 

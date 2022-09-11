@@ -6,6 +6,8 @@ namespace TranXuanTruong.Net.Models
         public string EmployeeName { get; set; }
         public int EmployeePhone { get; set;}
         public string EmployeeAddress { get; set; }
+
+        public string EmployeeAge { get; set; }
     }
 }
 
