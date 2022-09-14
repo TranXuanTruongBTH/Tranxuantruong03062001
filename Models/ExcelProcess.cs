@@ -1,10 +1,12 @@
-namespace TranXuanTruong.Net.Models
+namespace TranXuanTruong.Net.Models;
+
+public class ExcelProcess
 {
-    public class ExcelProcess
+    // khai các phương thức/thuộc tính
+    // khai báo 1 phương thức tổng 2 số
+
+    public int SumTwoInt(int x, int y)
     {
-        public int SumTwoInt(int x, int y)
-        {
-            return x+y;
-        }
+        return x+y;
     }
 }

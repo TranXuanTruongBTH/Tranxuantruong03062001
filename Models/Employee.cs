@@ -1,13 +1,15 @@
-namespace TranXuanTruong.Net.Models
+namespace TranXuanTruong.Net.Models;
+
+public class Employee
 {
-    public class Employee
-    {
-        public int EmployeeID { get; set; }
-        public string EmployeeName { get; set; }
-        public int EmployeePhone { get; set;}
-        public string EmployeeAddress { get; set; }
+    public int EmployeeID { get; set; }
 
-        public string EmployeeAge { get; set; }
-    }
+    public string EmployeeName { get; set; }
+
+    public int EmployeePhone { get; set; }
+
+    public string EmployeeAddress { get; set; }
+    
+    public int EmployeeAge { get; set; }
+      
 }
-

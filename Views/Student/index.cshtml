@@ -1,12 +1,28 @@
-@{
-    ViewData["Title"] = "Home Page";
+<h2>Danh Sách Sinh Viên</h2>
+<hr>
+<table class="table border">
+    <tr>
+        <tr>
+            <laber>ID</laber>
+        </tr>
+        <tr>
+            <label>Name</label>
+        </tr>
+        <tr>
+            <laber>Email</laber>
+        </tr>
+        <tr>
+            <laber>Age</laber>
+        </tr>
+    </tr>
+@foreach (var item in ViewData["Student"] as List<Student>)
+{
+    <tr>
+        <td>@item.StudentID</td>
+        <td>@item.StudentName</td>
+        <td>@item.StudentEmail</td>
+        <td>@item.StudentAge</td>
+    </tr>
 }
-<h2>ViewHome/Index</h2>
-<form asp-action="Index">
-    <label>Enter Your Name</label>
-    <input type="text" name="Fullname" placeholder="Enter Your Name">
-    <input type="email" name="Email" placeholder="Enter Your Email">
-    <button type="submit">Save</button>
-</form>
-
-<h2>@ViewBag.name</h2>
+</table>
+</hr>
